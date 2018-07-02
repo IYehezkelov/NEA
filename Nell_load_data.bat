@@ -1,31 +1,31 @@
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-::											Nell'Armonia - DM Load data file script								::
+::                  Nell'Armonia - DM Load data file script                   ::
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-::																																						::
-::	1. Settings & General definition																					::
-::																																						::
+::                                                                            ::
+::  1. Settings & General definition                                          ::
+::                                                                            ::
 ::	2. EPMAutomate commands																										::
-::	  2.1 Login 																															::
-::	  2.2 Clear old file from inbox 																					::
-::	  2.3 Load new file to inbox																							::
-::	  2.4 BEFORE - cleardata on target PoV																		::
-::	  2.5 Run data load																												::
-::	  2.6 AFTER - currency conversion																					::
-::	  2.7 AFTER - update Smart Push 'load year' sub var												::
-::	  2.8 AFTER - smart push																									::
-::	  2.9 LogOut																															::
-::																																						::
-::  3. Functions																															::
-::	  3.1 getLoadYear --> retrieves the load year from flat file							::
-::	  3.2 getDateTime --> timestamp for logs																	::
-::																																						::
+::    2.1 Login                                                               ::
+::    2.2 Clear old file from inbox                                           ::
+::    2.3 Load new file to inbox                                              ::
+::    2.4 BEFORE - cleardata on target PoV                                    ::
+::    2.5 Run data load                                                       ::
+::    2.6 AFTER - currency conversion                                         ::
+::    2.7 AFTER - update Smart Push 'load year' sub var                       ::
+::    2.8 AFTER - smart push                                                  ::
+::    2.9 LogOut                                                              ::
+::                                                                            ::
+::  3. Functions                                                              ::
+::    3.1 getLoadYear --> retrieves the load year from flat file              ::
+::    3.2 getDateTime --> timestamp for logs                                  ::
+::                                                                            ::
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 @echo off
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::
-::	1. Settings & General definition				::
+::  1. Settings & General definition        ::
 ::::::::::::::::::::::::::::::::::::::::::::::
 
 
@@ -81,11 +81,11 @@ SET payload=DM_YR=%loadYear%
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::
-::	2. EPMAutomate													::
+::  2. EPMAutomate                          ::
 ::::::::::::::::::::::::::::::::::::::::::::::
 
 
-:: 2.1 LogIn	::
+:: 2.1 LogIn ::
 call:getDateTime myDate
 echo %myDate% - Starting data load for %LOCATION% for the year %loadYear%. Logging in to PBCS. > %logFile%
 call %EPMAutomate% login %AdminUser% %adminPw% %url% %domain% >> %logFile%
@@ -132,7 +132,7 @@ call %EPMAutomate% logout >> %logFile%
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::
-::	3. FUNCTIONS (must be at end of file)		::
+::  3. FUNCTIONS (must be at end of file)   ::
 ::::::::::::::::::::::::::::::::::::::::::::::
 
 
