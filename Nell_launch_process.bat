@@ -5,13 +5,13 @@
 ::  1. Settings & General definition                                          ::
 ::                                                                            ::
 ::  2. EPMAutomate commands                                                   ::
-::	  2.1 Login                                                             ::
-::	  2.2 Launch business rule/sc                                           ::
-::	  2.3 push data to ASO                                                  ::
-::	  2.4 Logout                                                            ::
+::    2.1 Login                                                               ::
+::    2.2 Launch business rule/sc                                             ::
+::    2.3 push data to ASO                                                    ::
+::    2.4 Logout                                                              ::
 ::                                                                            ::
 ::  3. Functions                                                              ::
-::	  3.1 getDateTime --> timestamp for logs                                ::
+::    3.1 getDateTime --> timestamp for logs                                  ::
 ::                                                                            ::
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
