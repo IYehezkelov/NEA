@@ -4,7 +4,7 @@
 ::                                                                            ::
 ::  1. Settings & General definition                                          ::
 ::                                                                            ::
-::	2. EPMAutomate commands                                                   ::
+::  2. EPMAutomate commands                                                   ::
 ::	  2.1 Login                                                               ::
 ::	  2.2 Launch business rule/sc                                             ::
 ::	  2.3 push data to ASO                                                    ::
