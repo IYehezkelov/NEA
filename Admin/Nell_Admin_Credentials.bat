@@ -1,18 +1,18 @@
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-::											Nell'Armonia - Admin username & password							::
+::                   Nell'Armonia - Admin username & password                 ::
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-::																															              ::
-::	1. Settings & General definition																					::
-::																															              ::
-::	2. EPMAutomate commands 																								  ::
-::	  2.1 prompt user for Admin credentials																		::
-::	  2.2 Encrypt password and save UN and PW																	::
-::																															              ::
+::                                                                            ::
+::  1. Settings & General definition                                          ::
+::                                                                            ::
+::  2. EPMAutomate commands                                                   ::
+::    2.1 prompt user for Admin credentials                                   ::
+::    2.2 Encrypt password and save UN and PW                                 ::
+::                                                                            ::
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::
-::	1. Settings & General definition		    ::
+::  1. Settings & General definition        ::
 ::::::::::::::::::::::::::::::::::::::::::::::
 
 
@@ -29,7 +29,7 @@ SET url=https://planning%env%-%domain%.pbcs.%dc%.oraclecloud.com
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::
-::	2. EPMAutomate							            ::
+::  2. EPMAutomate                          ::
 ::::::::::::::::::::::::::::::::::::::::::::::
 
 

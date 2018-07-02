@@ -1,7 +1,7 @@
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-::											Nell'Armonia - launch PBCS process script							::
+::               Nell'Armonia - launch PBCS process script                    ::
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-::																															              ::
+::                                                                            ::
 ::	1. Settings & General definition																					::
 ::																															              ::
 ::	2. EPMAutomate commands 																								  ::
@@ -19,7 +19,7 @@
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::
-::	1. Settings & General definition		    ::
+::  1. Settings & General definition        ::
 ::::::::::::::::::::::::::::::::::::::::::::::
 
 
@@ -59,7 +59,7 @@ SET /p LBE_VER=Please enter the last best estimate version (WV / V1 / V2 / V3 / 
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::
-::	2. EPMAutomate							            ::
+::  2. EPMAutomate                          ::
 ::::::::::::::::::::::::::::::::::::::::::::::
 
 
@@ -85,7 +85,7 @@ call %EPMAutomate% logout >> %logfile%
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::
-::	3. FUNCTIONS (must be at end of file)	  ::
+::  3. FUNCTIONS (must be at end of file)   ::
 ::::::::::::::::::::::::::::::::::::::::::::::
 
 
