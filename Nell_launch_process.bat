@@ -2,7 +2,7 @@
 ::               Nell'Armonia - launch PBCS process script                    ::
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ::                                                                            ::
-::	1. Settings & General definition                                          ::
+::  1. Settings & General definition                                          ::
 ::                                                                            ::
 ::	2. EPMAutomate commands                                                   ::
 ::	  2.1 Login                                                               ::
