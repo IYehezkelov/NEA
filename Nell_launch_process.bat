@@ -27,18 +27,18 @@
 SET env=""
 :: SET env="-test"
 SET dc="DATA_CENTER"
-SET domain="CLIENT_DOMAIN_NAME"
+SET domain="CLIENT_DOMAIN"
 SET url=https://planning%env%-%domain%.pbcs.%dc%.oraclecloud.com
 SET location=Israel
 
 :: 1.1 EPM & Batch path ::
 SET EPMAutomate="PATH_TO_EPMautomate_FOLDER"
 SET mainPath="PATH_TO_MAIN_BATCH_FOLDER"
-SET batPath=%mainPath%"PATH_TO_SPECIFIC_BATCH_FOLDER"
+SET batPath=%mainPath%\"PATH_TO_SPECIFIC_BATCH_FOLDER"
 
 :: 1.2 admin user details ::
-SET /p adminUser=<"D:\%mainPath%\ADMIN\Password\ADMIN_USER.txt"
-SET /p adminPwPath="D:\%mainPath%\ADMIN\Password\ADMIN_PW.epw"
+SET /p adminUser=<"%mainPath%\ADMIN\Password\ADMIN_USER.txt"
+SET /p adminPw="%mainPath%\ADMIN\Password\ADMIN_PW.epw"
 
 :: 1.3 SmartPush ::
 SET sp1="SMART_PUSH_1"
@@ -66,7 +66,7 @@ SET /p LBE_VER=Please enter the last best estimate version (WV / V1 / V2 / V3 / 
 :: 2.1 LogIn	::
 call:getDateTime myDate
 echo %myDate% - Initializing Forecast for %location%. Logging in to PBCS. > %logfile%
-call %EPMAutomate% login %adminUser% %adminPwPath% %url% %domain% >> %logfile%
+call %EPMAutomate% login %adminUser% %adminPw% %url% %domain% >> %logfile%
 
 :: 2.2 Launch Allocation business Rule ::
 call:getDateTime myDate
