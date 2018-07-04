@@ -42,8 +42,8 @@ SET mainPath="PATH_TO_MAIN_BATCH_FOLDER"
 SET batPath=%mainPath%"PATH_TO_BATCH_SUBFOLDER"
 
 :: 1.3 admin user details ::
-SET /p adminUser=<"D:\%mainPath%\ADMIN\Password\ADMIN_USER.txt"
-SET /p adminPw="D:\%mainPath%\ADMIN\Password\ADMIN_PW.epw"
+SET /p adminUser=<"%mainPath%\ADMIN\Password\ADMIN_USER.txt"
+SET /p adminPw="%mainPath%\ADMIN\Password\ADMIN_PW.epw"
 
 :: 1.4 Data management scope ::
 SET LOCATION="DM_LOCATION_NAME"
