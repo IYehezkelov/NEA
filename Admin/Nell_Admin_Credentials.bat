@@ -24,7 +24,7 @@ SET adminPath=%mainPath%\ADMIN
 :: EPMautomate url and domain (cloud)
 SET env=""
 SET dc="DATA_CENTER"
-SET domain="CLIENT_DOMAIN_NAME"
+SET domain="CLIENT_DOMAIN"
 SET url=https://planning%env%-%domain%.pbcs.%dc%.oraclecloud.com
 
 
@@ -43,4 +43,4 @@ ECHO password = %password%
 ECHO %user% > D:\%adminPath%\Password\ADMIN_USER.txt
 
 :: create encrypted PW file
-CALL %EPMAutomate% encrypt %password% %user% D:\%adminPath%\Password\ADMIN_PW.epw
+CALL %EPMAutomate% encrypt %password% %user% %adminPath%\Password\ADMIN_PW.epw
